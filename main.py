@@ -5,7 +5,10 @@ from pyqrcode import QRCode
   
   
 # String which represents the QR code 
-s = "www.github.org"
+s = "www.geeksforgeeks.org"
   
 # Generate QR code 
-url = pyqrcode.create(s)
+url = pyqrcode.create(s) 
+  
+# Create and save the svg file naming "myqr.svg" 
+url.svg("myqr.svg")
